@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icons/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/slick-theme.css"/>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/adaptive.css">
+    <title>WebCalculator</title>
+</head>
+<body>
+    <section class="about">
+        <div class="container">
+            <div class="about__block">
+                <h1 class="header">Калькулятор</h1>
+                <div class="about__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <button class="about__btn">Рассчитать</button>
+            </div>
+            <img src="assets/img/calculator_img.png" alt="#" class="about__img">
+        </div>
+    </section>
+
+    <section class="explanation">
+        <div class="container">
+            <h2 class="header">Как это<br>работает?</h2>
+            <div class="explanation__textblock">
+                <h3 class="explanation__text">Выбираете необходиые товары</h3>
+                <h3 class="explanation__text">При наличии, загружаете макеты</h3>
+            </div>
+            
+           <div class="explanation__stepblock">
+            <div class="explanation__steps">
+                <div class="explanation__round">
+                    1
+                </div>
+                <div class="explanation__round">
+                    2
+                </div>
+                <div class="explanation__round">
+                    3
+                </div>
+                <div class="explanation__round">
+                    4
+                </div>
+            </div>
+            <div class="explanation__textblock-right">
+                <h3 class="explanation__text">Выбираете необходиые товары</h3>
+                <h3 class="explanation__text">При наличии, загружаете макеты</h3>
+                <h3 class="explanation__text">Указываете Тираж
+                    комплектов</h3>
+                <h3 class="explanation__text">СВЯЖЕМСЯ С ВАМИ В ТЕЧЕНИИ 24 ЧАСОВ</h3>
+            </div> 
+           </div>
+            <div class="explanation__textblock">
+                <h3 class="explanation__text">Указываете Тираж
+                    комплектов</h3>
+                <h3 class="explanation__text">СВЯЖЕМСЯ С ВАМИ В ТЕЧЕНИИ 24 ЧАСОВ</h3>
+            </div> 
+        </div>
+    </section>
+
+    <section class="calculator">
+        <div class="container">
+            <div class="header">КАЛЬКУЛЯТОР</div>
+            <div class="calculator__cart">
+                <h3 class="calculator__title">Список товаров</h3>
+                <div class="calculator__list">
+                    <div class="calculator__empty">Список пуст</div>
+                </div>
+                <div class="calculator__order">
+                    <h3 class="order__price">Цена: <span></span></h3>
+                    <button class="order__btn">Запросить расчет</button>
+                </div>
+            </div>
+            <img src="assets/img/cart_image.png" alt="cart" class="cart__img">
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__wrapper">
+                <div class="catalog__item" data-id="stickers">
+                    <div class="catalog__img"></div>
+                    <div class="catalog__data">
+                        <div class="catalog__title">стикер-пак</div>
+                        <div class="catalog__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                             sed do eiusmod</div>
+                        <button class="catalog__btn" id="1">ДОБАВИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog__item" data-id="packages">
+                    <div class="catalog__img"></div>
+                    <div class="catalog__data">
+                        <div class="catalog__title">пакеты-бумажные</div>
+                        <div class="catalog__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                             sed do eiusmod</div>
+                        <button class="catalog__btn" id="2">ДОБАВИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog__item" data-id="balls">
+                    <div class="catalog__img"></div>
+                    <div class="catalog__data">
+                        <div class="catalog__title">елочные шары</div>
+                        <div class="catalog__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                             sed do eiusmod</div>
+                        <button class="catalog__btn" id="3">ДОБАВИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog__item" data-id="pens">
+                    <div class="catalog__img"></div>
+                    <div class="catalog__data">
+                        <div class="catalog__title">ручки с логотипом</div>
+                        <div class="catalog__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                             sed do eiusmod</div>
+                        <button class="catalog__btn" id="4">ДОБАВИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog__item" data-id="calendars">
+                    <div class="catalog__img"></div>
+                    <div class="catalog__data">
+                        <div class="catalog__title">Календари</div>
+                        <div class="catalog__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                             sed do eiusmod</div>
+                        <button class="catalog__btn" id="5">ДОБАВИТЬ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal">
+        <div class="modal__box">
+            <div class="modal__window">
+                <div id="notification" class="notification">
+                </div>
+                <div class="modal__close"><img src="assets/icons/close.svg" alt="close_btn"></div>
+                <div class="modal__contacts">
+                    <a href="tel:+79999999999"><img src="assets/icons/phone.svg" class="phone__icon" alt="phone"></a>
+                    <a href="mailto:mail@htmlacademy.ru"><img src="assets/icons/mail.svg" class="mail__icon" alt="mail"></a>
+                    <div class="modal__descr">
+                        Для тиражей свыше 500 шт, обращайтесь к менеджерам
+                    </div>
+                </div>
+                <div class="modal__img">
+                    <div class="modal__contacts hidden">
+                        <a href="tel:+79999999999"><img src="assets/icons/phone.svg" class="phone__icon" alt="phone"></a>
+                        <a href="mailto:mail@htmlacademy.ru"><img src="assets/icons/mail.svg" class="mail__icon" alt="mail"></a>
+                        <div class="modal__descr">
+                            Для тиражей свыше 500 шт, обращайтесь к менеджерам
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="modal__data" id="data">
+                    <div class="modal__footer">
+                        <label for="images" class="drop-container" id="dropcontainer">
+                            <img src="assets/icons/upload.svg" alt="upload">
+                            <span class="drop-title">Загрузите макет (при наличии)</span>
+                            <input type="file" id="images" accept="image/*" title=" ">
+                        </label>
+                        <div class="modal__btn">ДОБАВИТЬ</div>
+                        <h3 class="price">Цена: <span>0 ₽</span></h3>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scroll.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/options.js"></script>
+    <script type="module" src="./js/cart.js" defer></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
